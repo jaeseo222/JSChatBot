@@ -1,0 +1,20 @@
+var num=3;
+var str="Hello World!";
+var bool=true;
+var obj={name: "jaeseo", age: 122};
+var nullVar1;
+var nullVar2=null;
+
+console.log("typeof num : "+typeof num);
+console.log("typeof str : "+typeof str);
+console.log("typeof bool : "+typeof bool);
+console.log("typeof obj : "+typeof obj);
+console.log("typeof nullVar1 : "+nullVar1);
+console.log("typeof nullVar2 : "+typeof nullVar2);
+console.log("typeof 103 : "+typeof 103);
+console.log("typeof \"ABC\" : "+typeof "ABC");
+console.log("typeof false : "+typeof false);
+console.log("typeof undefinedVar : "+typeof undefinedVar);
+console.log("typeof obj.name : "+typeof obj.name);
+console.log("typeof obj.age : "+typeof obj.age);
+console.log("typeof \{name: \"ABC\"\} : "+typeof {name: "ABC"});

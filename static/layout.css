@@ -1,0 +1,73 @@
+body {
+    /** body에 배경 적용 */
+    background-color: #272727;
+    /** 고정된 사이즈로 설정 */
+    background-size: 100px;
+
+    /** 기본 body 사이즈를 화면 크기로 고정 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.page {
+    /** 기본 너비, 높이 지정 (반응형 X) */
+    width: 480px;
+    height: 600px;
+
+    /** flex 레이아웃 - 세로로 */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.msg_execute {
+    /** 기본 너비, 높이 지정 (반응형 X) */
+    width: 300px;
+    height: 180px;
+    display: table;
+
+    font-size: 1.2em;
+}
+.msg_execute > .text {
+    display: table-cell;
+    vertical-align: middle;
+    /*table에 관한 수직정렬 속성 top, middle, bottom 3가지가 있다.*/
+    text-align: center;
+}
+
+/** 그라데이션 윤곽선 적용 */
+.msg_execute,.page {
+    /** 배경 색깔 지정  */
+    /** 윤곽선 */
+    border: 5px solid transparent;
+    background: linear-gradient(#272727,#272727) padding-box, linear-gradient(to right, rgb(69, 138, 165), rgb(33, 129, 93)) border-box;
+    /** 모서리 둥글게 */
+    border-radius: 25px;
+
+    /** 좌우 마진을 auto(중앙에 배치), 상하 마진을 100px로 지정 */
+    margin: 100px auto;
+
+    /** 내부 컨텐츠 디폴트 */
+    color: #ffffff;
+    font-family: BCcardL;
+    padding: 10px;
+}
+.msg_let {
+    text-align: center;
+}
+#btn_let {
+    border: 5px solid transparent;
+    background: linear-gradient(to right, rgb(69, 138, 165), rgb(33, 129, 93));
+
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 100px auto;
+
+    color: #000000;
+    font-size: 1.2em;
+    font-family: BCcardB;
+}
+.imgCat {
+    text-align: center;
+}

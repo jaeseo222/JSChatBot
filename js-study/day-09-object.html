@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>My Movie</title>
+        <link rel="stylesheet" href="./css/day-09-layout.css"/>
+        <link rel="stylesheet" href="../static/font.css"/>
+        <script src="./js/print_movie.js"></script>
+    </head>
+    <body>
+        <h1>
+            🎞 My Movie
+        </h1>
+        <button
+            id="btn"
+            onclick="pnt_movie('Harry Potter : 해리포터와 마법사의 돌', 2001, '판타지')">Harry Potter</button>
+        <button id="btn" onclick="pnt_movie('이웃집 토토로', 1988, '판타지')">My Neighbor Totoro</button>
+        <button id="btn" onclick="pnt_movie('집으로', 2002, '가족/드라마')">The Way Home</button>
+        <div class="movieBox">
+            <div id="myMovieTitle">
+                영화 제목
+            </div>
+            <div id="myMovie">
+                📅 개봉년도
+                <br/>🎨 장르
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+body {
+    background-color: #272727;
+    color: #ffffff;
+    font-family: BCcardB;
+}
+#btn{
+    font-family: BCcardL;
+    margin: 0em 3em;
+}
+#myID{
+    font-size: 1.7em;
+    margin: 0.5em 1.5em;
+}
