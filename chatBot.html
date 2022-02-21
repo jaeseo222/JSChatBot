@@ -6,26 +6,24 @@
         <title>웹 {자바스크립트 편} ChatBot</title>
         <link rel="stylesheet" href="./static/layout.css"/>
         <link rel="stylesheet" href="./static/font.css"/>
+        <script src="./event/chat.js"></script>
     </head>
-
     <body>
         <div class="page">
             <div class="msg_execute">
-                <div class="text">
-                    <p>
-                        안녕하세요 챗봇입니다. 😊
-                    </p>
+                <div class="text_style" id="text">
+                    안녕하세요 챗봇입니다. 🐱
                 </div>
             </div>
 
-            <div class="imgCat">
-              <img src="./static/images/cat.png" alt="imgCat" width="100"/>
+            <div class="img_cat">
+                <img src="./static/images/cat.png" alt="imgCat" width="100"/>
             </div>
-            
+
             <div class="msg_let">
-                <input type="text" placeholder="말 걸기"></input>
+                <input id="console" class="msg_style" type="text" placeholder="말 걸기"></input>
             </div>
-            <button id="btn_let">시키기</button>
+            <div id="btn_let" class="btn_style" onclick="check_text()">시키기</div>
         </div>
     </body>
 </html>
