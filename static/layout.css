@@ -11,7 +11,7 @@ body {
     right: 0;
     bottom: 0;
 }
-.page {
+.page_style {
     /** 기본 너비, 높이 지정 (반응형 X) */
     width: 480px;
     height: 600px;
@@ -37,12 +37,16 @@ body {
 }
 
 /** 그라데이션 윤곽선 적용 */
-.msg_execute,
-.page {
+.msg_execute, .page_style{
     /** 배경 색깔 지정  */
     /** 윤곽선 */
     border: 5px solid transparent;
-    background: linear-gradient(#272727,#272727) padding-box, linear-gradient(to right, rgb(69, 138, 165), rgb(33, 129, 93)) border-box;
+    /*background: linear-gradient(#272727,#272727) padding-box, linear-gradient(to right, rgb(69, 138, 165), rgb(33, 129, 93)) border-box;
+    */
+    background-image: linear-gradient(#272727,#272727), linear-gradient(to right, rgb(69, 138, 165), rgb(33, 129, 93));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    
     /** 모서리 둥글게 */
     border-radius: 25px;
 
@@ -52,7 +56,6 @@ body {
     /** 내부 컨텐츠 디폴트 */
     color: #ffffff;
     font-family: BCcardL;
-    padding: 10px;
 }
 .msg_let {
     text-align: center;
@@ -76,6 +79,10 @@ body {
 }
 .img_cat {
     text-align: center;
+}
+#img_lampe{
+    position: absolute;
+    visibility: hidden;
 }
 .btn_style {
     border: 5px solid transparent;

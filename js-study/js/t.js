@@ -1,0 +1,5 @@
+console.log(document.getElementById('first-element').style.color); // "red"
+console.log(window.getComputedStyle(document.getElementById('second-element')).color); // "rgb(0, 128, 0)"
+console.log(getComputedStyle(document.getElementById('second-element')).color); // "rgb(0, 128, 0)"
+console.log(getComputedStyle(document.getElementById('first-element')).color); // "rgb(255, 0, 0)"
+console.log(document.getElementById('second-element').style.color); // ""
