@@ -3,4 +3,6 @@
 
 ![챗봇 화면-1](https://user-images.githubusercontent.com/68185825/155333023-1ec36f99-eb62-405a-8144-8d56de5c5369.png)
 
-![20220223-1](https://user-images.githubusercontent.com/68185825/155333150-c62e9fea-c70e-481f-b158-180c755c8d40.gif)
+
+![20220223-1](https://user-images.githubusercontent.com/68185825/155333470-6f636376-0d93-4ba9-a9cf-24baaef669a6.gif)
+![20220223-2](https://user-images.githubusercontent.com/68185825/155333475-922d7821-f695-4ffb-b903-1bc87ca3e007.gif)
