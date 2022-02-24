@@ -22,8 +22,7 @@ function eventChat(){
         }
         else
             chat_follow(chat);
-    }
-    
+    }   
     else{
         if(ins("안녕")||ins("hello"))
             chat.innerHTML = "애용";
@@ -40,8 +39,10 @@ function eventChat(){
         }
         else if(ins("그만"))
             chat.innerHTML = "안 따라하고 있었습니다?! 🙀";
-        else
-            chat.innerHTML = "모르겠습니다.";
+        else{
+            chat_dontKnow(chat);
+
+        }
     }
 }
 function gradation(col){
@@ -79,4 +80,19 @@ function chat_fire(chat, page, lampe){
 /* 따라하기 */
 function chat_follow(chat){
     chat.innerHTML = input+" 냥^^";
+}
+/* 모르는 내용 */
+function chat_dontKnow(chat) {
+    chat.innerHTML = "모르겠습니다.";
+
+    var app = document.getElementById('app');
+    var typewriter = new Typewriter(app, {loop: false});
+    typewriter
+        .typeString("코묘가 알아듣지 못한 것 같습니다.")
+        .pauseFor(20)
+        .deleteAll()
+        .typeString("다시 한 번 말해봅시다!")
+        .pauseFor(20)
+        .deleteAll()
+        .start();
 }
