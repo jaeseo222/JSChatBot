@@ -72,12 +72,16 @@ body {
     margin: auto;
 }
 .img_cat {
-
     margin: auto;
     text-align: center;
 }
 #img_lampe {
     position: absolute;
+    visibility: hidden;
+}
+.msg_execute > #img_fire {
+    position: absolute;
+    margin: 5px 25px;
     visibility: hidden;
 }
 .app_style {
